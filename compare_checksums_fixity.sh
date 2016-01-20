@@ -4,7 +4,8 @@ function usage {
   printf 'This script can be used to compare the output of two Fixity
   <https://www.avpreserve.com/tools/fixity/> checks on the same set of files.
   It requires Fixity output files using tab separation as input and stores
-  the results as a CSV file called "$input_1_result.csv".\n\n'
+  the results as a CSV file called "$input_1_result.csv" of the form:
+  "filename""checksums are equal".\n\n'
 }
 
 if [[ "$1" == "" || "$2" == "" ]]; then
